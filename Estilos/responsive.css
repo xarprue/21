@@ -1,0 +1,150 @@
+
+
+ 
+   
+
+
+
+
+
+/**Index**/
+/**Encabezado**/
+
+@media(min-width: 768px){
+    .contenido-header{
+        text-align: center;
+    }
+
+}
+
+@media(min-width: 768px){
+    .barra{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media(min-width: 768px){
+    .navegacion a{
+        display: inline;
+        font-size: 18px;
+        margin-right: 20px;
+    }
+}
+
+@media(min-width: 768px){
+    .menu-movil{
+        display: none;
+    }
+}
+
+@media(min-width: 768px){
+    .navegacion{
+        display: block;
+    }
+}
+
+/**Seccion nosotros**/
+
+@media(min-width: 768px){
+    .Iconos-nosotros{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .iconos{
+        flex-basis: calc(33.3% - 10px);
+    }
+}
+
+/**Seccion anuncios**/
+
+@media(min-width: 768px){
+    .contenedor-anuncios{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        
+    }
+}
+
+@media(min-width: 768px){
+    .anuncio{
+    flex-basis: calc(33.3% - 10px);
+    }
+}
+
+@media(min-width: 768px){
+    .resumen-propiedad{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+}
+
+/**Seccion inferior**/
+
+@media(min-width: 768px){
+    .sec-inferior{
+        display: flex;
+        justify-content: space-between;
+    }
+    .sec-inferior .blog{
+        flex-basis: 60%;
+    }
+    
+    .sec-inferior .testimoniales{
+        flex-basis: calc(40% - 20px);
+    }
+}
+
+@media(min-width: 768px){
+    .entrada-blog{
+        display:flex;
+        justify-content: space-between;
+    }
+}
+
+@media(min-width: 768px){
+    .imagen{
+       width: 35%; 
+    }   
+    
+    .texto-entrada{
+        flex-basis: calc(60% - 20px);
+    }
+
+}
+
+
+@media(min-width: 768px){
+    .imagen2{
+       width: 70%; 
+      
+    }   
+
+    
+    
+
+}
+
+/**Seccion footer**/
+
+@media(min-width: 768px){
+    .contenedor-footer{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+/**Seccion nosotros**/
+
+@media(min-width: 768px){
+    .contenido-nosotros{
+        display: grid;
+        grid-template-columns: repeat(2,  1fr);
+        grid-column-gap: 20px;
+    }
+}
