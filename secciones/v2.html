@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../estilos.css">
+    <link rel="shortcut icon" type="image/x" href="../img/m.png">
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <title>Tipos</title>
+   <!-- AQUI INICIA EL HEADER -->
+<header>
+    <p class="logo">PapusTec</p>
+    <span class="menu-icon" onclick="toggleMenu()">&#9776;</span>
+    <nav id="menu">
+        <a href="../index.html">Inicio</a>
+        <a href="../informacion.html">Información</a>
+    </nav>
+</header>
+<!-- TERMINA EL HEADER -->
+
+<!-- INICIA DESARROLLO -->
+
+<br><br><br><br><br>
+
+<section id="banner">
+    <div class="contenedor">
+        <div class="imagen"></div>
+        <img src="../img/tipos.jpg" alt="">
+        <div class="textos">
+            <h4> Tipos de aplicación web.</h4>
+            <p> Dependiendo de la necesidad y la escalabilidad, se pueden usar distintos tipos de arquitectura para una aplicación web.
+                <br>
+                <p>1.- Monolítica: Es la arquitectura tradicional donde toda la funcionalidad de la aplicación está empaquetada en una única unidad o sistema. 
+                    Es fácil de desarrollar al inicio, pero difícil de escalar conforme crece la aplicación. 
+                    Por eso, muchas empresas están migrando de arquitecturas monolíticas a otras más modulares.</p>
+                <br>
+                <p>2.- Microservicios: En esta arquitectura, la aplicación se divide en servicios pequeños e independientes. 
+                    Cada servicio tiene una función específica y se comunica con otros a través de APIs. 
+                    Esta arquitectura facilita la escalabilidad, la actualización y la independencia de los componentes, lo que la hace adecuada para aplicaciones grandes y complejas.</p>
+                <br>
+               <p>3.- Serverless: En una arquitectura serverless, no es necesario administrar servidores. 
+                Los desarrolladores solo escriben funciones que son ejecutadas bajo demanda por un proveedor de servicios en la nube, como AWS Lambda.
+                 Esto reduce los costos operativos y permite un enfoque más flexible y escalable.</p>
+            </p>
+            </div>
+    </div>
+</section>
+
+
+<!-- TERMINA DESARROLLO -->
+<br><br><br>
+<!-- EL PIE DE PÁGINA, NO EDITAR. -->
+<footer class="pie-pagina">
+    <div class="grupo-1">
+        <div class="box">
+            <figure> 
+                <div class="contenedor">   
+                    <p>Papus Tec</p>
+                </div>
+            </figure>
+        </div>
+        <div class="box">
+            <h2>SOBRE NOSOTROS</h2>
+            <p>Página que te muestra información sobre páginas web. :D</p>
+        </div>
+        <div class="box">
+            <h2>SIGUENOS</h2>
+            <div class="red-social">
+                <a href="https://es-la.facebook.com/" class="fa fa-facebook"></a>
+                <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+                <a href="https://x.com/?lang=es" class="fa fa-twitter"></a>
+            </div>
+        </div>
+    </div>
+    <div class="grupo-2">
+        <small>&copy; 2024 <b>Papus Tec</b> - Todos los Derechos Reservados.</small>
+    </div>
+</footer>
+<!-- TERMINA EL PIE DE PAGINA -->
+
+
+<script>
+    // Función para mostrar/ocultar el menú en pantallas pequeñas
+    function toggleMenu() {
+        var menu = document.getElementById("menu");
+        menu.classList.toggle("show");
+    }
+</script>
+
+</body>
+</html>

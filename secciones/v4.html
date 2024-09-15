@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../estilos.css">
+    <link rel="shortcut icon" type="image/x" href="../img/m.png">
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <title>Seguridad</title>
+   <!-- AQUI INICIA EL HEADER -->
+<header>
+    <p class="logo">PapusTec</p>
+    <span class="menu-icon" onclick="toggleMenu()">&#9776;</span>
+    <nav id="menu">
+        <a href="../index.html">Inicio</a>
+        <a href="../informacion.html">Información</a>
+    </nav>
+</header>
+<!-- TERMINA EL HEADER -->
+
+<!-- INICIA DESARROLLO -->
+
+<br><br><br><br><br>
+
+<section id="banner">
+    <div class="contenedor">
+        <div class="imagen"></div>
+        <img src="../img/seguridad.jfif" alt="">
+        <div class="textos">
+            <h4> Comunicación y seguridad.</h4>
+            <p> En una aplicación web, la comunicación entre el cliente y el servidor es clave. Esto se realiza generalmente a través de solicitudes HTTP, y las respuestas suelen estar en formato JSON o XML. Para mejorar la seguridad, se implementan técnicas como:
+                <br>
+                <p>1.- HTTPS: Para encriptar las comunicaciones y evitar que sean interceptadas.</p>
+                <br>
+                <p>2.- Autenticación y Autorización: A través de tokens como JWT (JSON Web Token) para asegurar que solo los usuarios autorizados puedan acceder a ciertos recursos.</p>
+                <br>
+                <p>3.- CORS (Cross-Origin Resource Sharing): Para controlar qué dominios pueden interactuar con la API. </p></p>
+        </div>
+    </div>
+</section>
+
+
+<!-- TERMINA DESARROLLO -->
+<br><br><br>
+<footer class="pie-pagina">
+    <div class="grupo-1">
+        <div class="box">
+            <figure> 
+                <div class="contenedor">   
+                    <p>Papus Tec</p>
+                </div>
+            </figure>
+        </div>
+        <div class="box">
+            <h2>SOBRE NOSOTROS</h2>
+            <p>Página que te muestra información sobre páginas web. :D</p>
+        </div>
+        <div class="box">
+            <h2>SIGUENOS</h2>
+            <div class="red-social">
+                <a href="https://es-la.facebook.com/" class="fa fa-facebook"></a>
+                <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+                <a href="https://x.com/?lang=es" class="fa fa-twitter"></a>
+            </div>
+        </div>
+    </div>
+    <div class="grupo-2">
+        <small>&copy; 2024 <b>Papus Tec</b> - Todos los Derechos Reservados.</small>
+    </div>
+</footer>
+<!-- TERMINA EL PIE DE PAGINA -->
+
+
+<script>
+    // Función para mostrar/ocultar el menú en pantallas pequeñas
+    function toggleMenu() {
+        var menu = document.getElementById("menu");
+        menu.classList.toggle("show");
+    }
+</script>
+
+</body>
+</html>

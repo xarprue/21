@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../estilos.css">
+    <link rel="shortcut icon" type="image/x" href="../img/m.png">
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <title>Componentes</title>
+   <!-- AQUI INICIA EL HEADER -->
+<header>
+    <p class="logo">PapusTec</p>
+    <span class="menu-icon" onclick="toggleMenu()">&#9776;</span>
+    <nav id="menu">
+        <a href="../index.html">Inicio</a>
+        <a href="../informacion.html">Información</a>
+    </nav>
+</header>
+<!-- TERMINA EL HEADER -->
+
+<!-- INICIA DESARROLLO -->
+
+<br><br><br><br><br>
+
+<section id="banner">
+    <div class="contenedor">
+        <div class="imagen"></div>
+        <img src="../img/componentes.jfif" alt="">
+        <div class="textos">
+            <h4> Componentes de una aplicación web.</h4>
+            <p>Una arquitectura de aplicación web está compuesta por tres componentes principales:
+<br>
+                <p>1.- Cliente (Front-end): Es la parte visual e interactiva con 
+                    la que el usuario finaliza la experiencia. Se desarrolla con 
+                    tecnologías como HTML, CSS y JavaScript. El front-end se encarga de la 
+                    representación de los datos que provienen del servidor, además de proporcionar una experiencia de usuario fluida.</p>
+                <br>
+                <p>2.- Servidor (Back-end): Es el motor de la aplicación. 
+                    Aquí es donde se procesan las solicitudes, se gestionan los datos y se aplican las reglas de negocio. 
+                    Los lenguajes de programación más comunes en el back-end son Node.js, Python, Ruby o PHP. 
+                    También es donde se alojan las API y los controladores que interactúan con bases de datos.</p>
+                <br>
+                <p>3.- Base de Datos: El lugar donde se almacenan los datos de la aplicación. 
+                    Existen dos tipos principales: las bases de datos relacionales (SQL) y las no relacionales (NoSQL). 
+                    Las bases de datos relacionales, como MySQL o PostgreSQL, organizan los datos en tablas y usan relaciones entre ellas. 
+                    Las bases de datos no relacionales, como MongoDB, permiten estructuras más flexibles y no dependen de un esquema fijo.</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- TERMINA DESARROLLO -->
+<br><br><br>
+<footer class="pie-pagina">
+    <div class="grupo-1">
+        <div class="box">
+            <figure> 
+                <div class="contenedor">   
+                    <p>Papus Tec</p>
+                </div>
+            </figure>
+        </div>
+        <div class="box">
+            <h2>SOBRE NOSOTROS</h2>
+            <p>Página que te muestra información sobre páginas web. :D</p>
+        </div>
+        <div class="box">
+            <h2>SIGUENOS</h2>
+            <div class="red-social">
+                <a href="https://es-la.facebook.com/" class="fa fa-facebook"></a>
+                <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+                <a href="https://x.com/?lang=es" class="fa fa-twitter"></a>
+            </div>
+        </div>
+    </div>
+    <div class="grupo-2">
+        <small>&copy; 2024 <b>Papus Tec</b> - Todos los Derechos Reservados.</small>
+    </div>
+</footer>
+<!-- TERMINA EL PIE DE PAGINA -->
+
+
+<script>
+    // Función para mostrar/ocultar el menú en pantallas pequeñas
+    function toggleMenu() {
+        var menu = document.getElementById("menu");
+        menu.classList.toggle("show");
+    }
+</script>
+
+</body>
+</html>

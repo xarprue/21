@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="shortcut icon" type="image/x" href="img/m.png">
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <title>PapusTec Informa</title>
+   <!-- AQUI INICIA EL HEADER -->
+<header>
+    <p class="logo">PapusTec</p>
+    <span class="menu-icon" onclick="toggleMenu()">&#9776;</span>
+    <nav id="menu">
+        <a href="index.html">Inicio</a>
+        <a href="informacion.html">Información</a>
+    </nav>
+</header>
+<!-- TERMINA EL HEADER -->
+
+<!-- INICIA DESARROLLO -->
+<body>
+<br><br><br><br><br>
+<section id="hero">
+    <h1>Arquitectura de una aplicación web.</h1>
+</section>
+<br><br><br><br><br>
+<!-- banner de inicio -->
+<section id="banner">
+    <div class="contenedor">
+        <div class="imagen"></div>
+        <img src="img/si.png" alt="">
+        <div class="textos">
+            <h2> Arquitectura de una<span class="color-acento"> aplicación web.</span></h2>
+            <p>Entender la arquitectura de una página web es fundamental para cualquier 
+                desarrollador o diseñador web, ya que influye directamente en el rendimiento, 
+                la seguridad y la capacidad de mantenimiento de la aplicación.</p>
+        </div>
+    </div>
+</section>
+<!-- final de banner de inicio -->
+<br><br><br><br><br>
+<!-- inicio de banner con cartas-->
+<section id="informacion-pag">
+    <div class="contenedor">
+        <h2>Revisa más sobre este contenido.</h2>
+        <br><br><br>
+        <div class="infocartas">
+            <div class="cartas">
+                <h3>Componentes</h3>
+                <form action="secciones/v1.html"><button>Visitar</button></form>
+            </div>
+            <div class="cartas">
+                <h3>Tipos</h3>
+                <form action="secciones/v2.html"><button>Visitar</button></form>
+            </div>
+            <div class="cartas">
+                <h3>Patrones</h3>
+                <form action="secciones/v3.html"><button>Visitar</button></form>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- final banner con cartas -->
+<!-- TERMINA DESARROLLO -->
+<br><br><br>
+<footer class="pie-pagina">
+    <div class="grupo-1">
+        <div class="box">
+            <figure> 
+                <div class="contenedor">   
+                    <p>Papus Tec</p>
+                </div>
+            </figure>
+        </div>
+        <div class="box">
+            <h2>SOBRE NOSOTROS</h2>
+            <p>Página que te muestra información sobre páginas web. :D</p>
+        </div>
+        <div class="box">
+            <h2>SIGUENOS</h2>
+            <div class="red-social">
+                <a href="https://es-la.facebook.com/" class="fa fa-facebook"></a>
+                <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+                <a href="https://x.com/?lang=es" class="fa fa-twitter"></a>
+            </div>
+        </div>
+    </div>
+    <div class="grupo-2">
+        <small>&copy; 2024 <b>Papus Tec</b> - Todos los Derechos Reservados.</small>
+    </div>
+</footer>
+<!-- TERMINA EL PIE DE PAGINA -->
+
+
+<script>
+    // Función para mostrar/ocultar el menú en pantallas pequeñas
+    function toggleMenu() {
+        var menu = document.getElementById("menu");
+        menu.classList.toggle("show");
+    }
+</script>
+
+</body>
+</html>
