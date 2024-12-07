@@ -18,25 +18,31 @@
 				<a href="#">
 					<p class="logo">Incriptify</p>
 			    </a>
-
-				
-				<div class="menu-movil">
-					<a href="#navegacion">
-						<img src="Imagenes/barras.svg" alt="Menu">
-					</a>
-					
-				</div>
-
-			    <nav id="navegacion" class="navegacion">
-		            <a href="nosotros.html">Nosotros</a>
-		            <a href="anuncios.html">Planes</a>
-		            <a href="blog.html">Blog</a>
-				</nav> <!--finaliza barra de navegacion-->   
+				<span class="menu-icon" onclick="toggleMenu()">&#9776;</span>
+                <nav id="menu">
+                <a href="index.html">Inicio</a>
+                <a href="Secciones/lugares.html">Anuncios</a>
+                </nav>
 	        </div> <!--finaliza la seccion barra-->
 		       <h1>Innovación en seguridad, tranquilidad para tí.</h1> 
 		   </div>  
 	   </header>
+	   <script>
+		function toggleMenu() {
+    var menu = document.getElementById("menu");
+    var menuIcon = document.querySelector(".menu-icon");
 
+    // Alternar la clase "show" para abrir/cerrar el menú
+    menu.classList.toggle("show");
+
+    // Cambiar el ícono entre hamburguesa y cruz (Unicode: ✖)
+    if (menu.classList.contains("show")) {
+        menuIcon.innerHTML = "&#10005;"; // Cambia a cruz
+    } else {
+        menuIcon.innerHTML = "&#9776;"; // Cambia a hamburguesa
+    }
+}
+	</script>
 	   <br><br><br><br><br>
 
 
@@ -97,9 +103,7 @@
 			</div>
 
 		</div> <!--Finaliza caja de todas los anuncios-->
-		<div class="todas">
-			 <a href="anuncios.html" class="boton btn-verde">Ver más</a> 
-		</div>
+
 	</main> <!--Finaliza seccion principal anuncios-->
 
 

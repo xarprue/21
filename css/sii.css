@@ -1,0 +1,42 @@
+:root{
+    --fondo: rgb(253, 253, 253);
+    --textos: #0a2d7a;
+    --FondoBarra: rgb(11, 110, 77);
+    --ancho:1200px;
+    --borde: #1e53a0;
+    --boton: #0a2d7a;
+    --anchoFormulario: 800px;
+}
+
+
+/**Pagina Contacto**/
+
+form{
+    max-width: var(--anchoFormulario);
+    margin: 30px auto;
+}
+
+fieldset{
+    color: var(--textos);
+}
+
+legend{
+    font-size: 25px;
+    font-weight: 900;
+}
+
+label{
+    text-transform: uppercase;
+    margin: 5px;
+    display: block;
+}
+
+input:not([type = 'submit']),
+select{
+    padding: 10px;
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+}

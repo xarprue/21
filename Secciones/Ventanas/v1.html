@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../Estilos/Style.css">
+        <link rel="stylesheet" href="../../Estilos/responsive.css">
+        <link rel="stylesheet" href="../../Estilos/normalize.css">
+      <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200;300;400;500&family=Mukta:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" type="image/x" href="Imagenes/1.png">
+        
+        <title>Incriptify - Sentinela</title>
+    </head>
+<body>
+    <header class="site-header">
+        <div class="contenedor contenido-header">
+             <div class="barra">
+                 <a href="../../index.html">
+                    <p class="logo">Incriptify</p>
+                 </a>
+
+                 <span class="menu-icon" onclick="toggleMenu()">&#9776;</span>
+                 <nav id="menu">
+                 <a href="../../index.html">Inicio</a>
+                 <a href="anuncios.html">Anuncios</a>
+                 </nav>
+             </div> <!--finaliza la seccion barra-->
+            </div>  
+        </header>
+    <br><br><br><br>
+
+
+    <section id="ropaaa">
+        <div class="contenedor">
+            <div class="imagen2"><img src="../../Imagenes/5.png" alt=""></div>
+       
+       
+            <div class="textos1">     
+                <div class="texto-nosotros1">
+                    <blockquote>Sentinela</blockquote>
+               </div>
+
+                <p>- Protección Integral: Protege contra malware, ransomware, phishing y ataques DDoS.</p>
+                <p>- Fácil de Usar: Gestión intuitiva sin necesidad de un equipo de TI dedicado.</p>
+                <p>- Soporte 24/7: Asistencia disponible en cualquier momento del día.</p>
+                <p>- Escalabilidad: Soluciones que crecen junto con tu negocio.</p>
+                <p>- Mejor Relación Calidad-Precio: Tarifas competitivas sin comprometer la calidad.</p>
+                <p>- Implementación Rápida: Protección completa en el menor tiempo posible.</p>
+       
+            <div class="texto-nosotros1">
+           </div>
+            </div>
+
+        </div>
+    </section>
+    <br><br><br><br><br>
+    
+
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure> 
+                    <div class="conenedor">   
+                        <P>INCRIPTIFY</P>
+                 
+                </figure>
+            </div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>Empresa de ciberseguridad enfocada en la vanguardia de datos y actulización de sistemas, mediante ideas innovadoras.</p>
+            </div>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="red-social">
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2024 <b>Incriptify</b> - Todos los Derechos Reservados.</small>
+        </div>
+    </footer>
+    
+
+
+    
+    <script>
+        function toggleMenu() {
+    var menu = document.getElementById("menu");
+    var menuIcon = document.querySelector(".menu-icon");
+
+    // Alternar la clase "show" para abrir/cerrar el menú
+    menu.classList.toggle("show");
+
+    // Cambiar el ícono entre hamburguesa y cruz (Unicode: ✖)
+    if (menu.classList.contains("show")) {
+        menuIcon.innerHTML = "&#10005;"; // Cambia a cruz
+    } else {
+        menuIcon.innerHTML = "&#9776;"; // Cambia a hamburguesa
+    }
+ }
+    </script>
+</body>
+</html>
