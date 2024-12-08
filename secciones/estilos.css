@@ -1,0 +1,222 @@
+#banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f4f4; /* Fondo opcional */
+}
+
+#banner .contenedor {
+    display: flex;
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+    flex-wrap: wrap; /* Para hacer que sea responsivo */
+    align-items: center;
+}
+
+#banner .textos {
+    flex: 1;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+h4{
+    font-size: 3.0rem;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #4B5945;
+}
+
+#banner .textos h4 {
+    font-size: 3.0rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#banner .textos p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+#banner .imagen {
+    flex: 1;
+    text-align: right; /* Centrar la imagen */
+}
+
+#banner .imagen img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Bordes redondeados opcionales */
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    #banner .contenedor {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+    }
+    #banner .imagen {
+        text-align: center; /* Centra la imagen en pantallas pequeñas */
+    }
+}
+
+
+
+/* Estilo del contenedor */
+.itinerario {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Título del itinerario */
+.itinerario h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #4B5945;
+}
+
+/* Tabla */
+.tabla-itinerario {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
+
+/* Cabecera de la tabla */
+.tabla-itinerario thead th {
+    background-color: #4B5945;
+    color: white;
+    font-size: 1.2em;
+    padding: 10px;
+}
+
+/* Filas de la tabla */
+.tabla-itinerario tbody tr:nth-child(odd) {
+    background-color: #f0f0f0;
+}
+
+.tabla-itinerario tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+/* Celdas de la tabla */
+.tabla-itinerario td, .tabla-itinerario th {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+/* Hover en las filas */
+.tabla-itinerario tbody tr:hover {
+    background-color: #dfe9ff;
+    transition: background-color 0.3s ease;
+}
+
+/* Celdas de horarios */
+.tabla-itinerario td:first-child {
+    font-weight: bold;
+    color: #66785F;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .tabla-itinerario th, .tabla-itinerario td {
+        font-size: 0.9em;
+        padding: 8px;
+    }
+
+    .itinerario h2 {
+        font-size: 1.5em;
+    }
+}
+
+
+/*Formulario*/
+/* Estilos base */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.formulario-contenedor {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.formulario h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+.campo {
+    margin-bottom: 15px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333333;
+}
+
+.campo input, .campo textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.campo textarea {
+    resize: vertical;
+}
+
+.boton-contenedor {
+    text-align: center;
+}
+
+.boton {
+    background-color: #4B5945;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.boton:hover {
+    background-color: #1e53a0;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .formulario-contenedor {
+        padding: 15px;
+    }
+
+    .campo input, .campo textarea {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .boton {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+}

@@ -1,0 +1,238 @@
+
+
+@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
+
+   
+
+
+
+
+
+/**Index**/
+/**Encabezado**/
+
+@media(min-width: 768px){
+    .contenido-header{
+        text-align: center;
+    }
+
+}
+
+/* Estilo del ícono de menú (hamburguesa) */
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    z-index: 1000; /* Para que esté siempre encima del menú */
+}
+
+/* Menú oculto y visible */
+nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #061c5b;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    text-align: center;
+    font-size: 20px;
+}
+
+nav a {
+    padding: 15px 0;
+    border-bottom: 1px solid white;
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav.show {
+    display: flex;
+}
+
+@media (min-width: 768px) {
+    nav {
+        display: flex; /* Mostrar el menú como barra horizontal */
+        flex-direction: row; /* Asegura que los enlaces estén en una línea */
+        justify-content: flex-end; /* Alinea los enlaces a la derecha */
+        background-color: transparent; /* Sin fondo */
+        position: static; /* Elimina la posición absoluta */
+        width: auto; /* Ajusta al contenido */
+        text-align: right; /* Alineación del texto */
+    }
+
+    .menu-icon {
+        display: none; /* Oculta el ícono del menú hamburguesa */
+    }
+
+    nav a {
+        margin-left: 20px; /* Espaciado entre enlaces */
+        border: none; /* Elimina bordes de enlaces */
+    }
+}
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+}
+/* Menú normal (en pantallas grandes) */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Ícono de menú hamburguesa (oculto en pantallas grandes) */
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Menú en pantallas pequeñas */
+@media (max-width: 768px) {
+    nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #061c5b;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        text-align: center;
+    }
+
+    nav a {
+        padding: 15px 0;
+        border-bottom: 1px solid white;
+        width: 100%;
+    }
+
+    nav.show {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+
+/**Seccion nosotros**/
+
+@media(min-width: 768px){
+    .Iconos-nosotros{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .iconos{
+        flex-basis: calc(33.3% - 10px);
+    }
+}
+
+/**Seccion anuncios**/
+
+@media(min-width: 768px){
+    .contenedor-anuncios{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        
+    }
+}
+
+@media(min-width: 768px){
+    .anuncio{
+    flex-basis: calc(33.3% - 10px);
+    }
+}
+
+@media(min-width: 768px){
+    .resumen-propiedad{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+}
+
+/**Seccion inferior**/
+
+@media(min-width: 768px){
+    .sec-inferior{
+        display: flex;
+        justify-content: space-between;
+    }
+    .sec-inferior .blog{
+        flex-basis: 60%;
+    }
+    
+    .sec-inferior .testimoniales{
+        flex-basis: calc(40% - 20px);
+    }
+}
+
+@media(min-width: 768px){
+    .entrada-blog{
+        display:flex;
+        justify-content: space-between;
+    }
+}
+
+@media(min-width: 768px){
+    .imagen{
+       width: 35%; 
+    }   
+    
+    .texto-entrada{
+        flex-basis: calc(60% - 20px);
+    }
+
+}
+
+
+@media(min-width: 768px){
+    .imagen2{
+       width: 70%; 
+      
+    }   
+
+    
+    
+
+}
+
+/**Seccion footer**/
+
+@media(min-width: 768px){
+    .contenedor-footer{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+/**Seccion nosotros**/
+
+@media(min-width: 768px){
+    .contenido-nosotros{
+        display: grid;
+        grid-template-columns: repeat(2,  1fr);
+        grid-column-gap: 20px;
+    }
+}
