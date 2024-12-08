@@ -1,168 +1,250 @@
 <!DOCTYPE html>
-<html lang="es-Mx">
-   <head>
-	  <link rel="stylesheet" href="Estilos/Style.css">
-	  <link rel="stylesheet" href="Estilos/responsive.css">
-	  <link rel="stylesheet" href="Estilos/normalize.css">
-	  <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
-	  <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200;300;400;500&family=Mukta:wght@200;300;400;500;600&display=swap" rel="stylesheet">
-	  <link rel="shortcut icon" type="image/x" href="Imagenes/1.png">
-      <title>Incriptify</title>
-   </head>
-   <body>
-	   <header class="site-header inicio">
-	   <div class="contenedor contenido-header">
-	        <div class="barra">
-				<a href="#">
-					<p class="logo">Incriptify</p>
-			    </a>
-				<span class="menu-icon" onclick="toggleMenu()">&#9776;</span>
-                <nav id="menu">
-                <a href="index.html">Inicio</a>
-                <a href="Secciones/lugares.html">Anuncios</a>
-                </nav>
-	        </div> <!--finaliza la seccion barra-->
-		       <h1>Innovación en seguridad, tranquilidad para tí.</h1> 
-		   </div>  
-	   </header>
-	   <script>
-		function toggleMenu() {
-    var menu = document.getElementById("menu");
-    var menuIcon = document.querySelector(".menu-icon");
+<html lang="es">
 
-    // Alternar la clase "show" para abrir/cerrar el menú
-    menu.classList.toggle("show");
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Take a Trip</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/m.png">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="css/Style.css">
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200;300;400;500&family=Mukta:wght@200;300;400;500;600&display=swap" rel="stylesheet">
 
-    // Cambiar el ícono entre hamburguesa y cruz (Unicode: ✖)
-    if (menu.classList.contains("show")) {
-        menuIcon.innerHTML = "&#10005;"; // Cambia a cruz
-    } else {
-        menuIcon.innerHTML = "&#9776;"; // Cambia a hamburguesa
-    }
-}
-	</script>
-	   <br><br><br><br><br>
+    <meta name="theme-color" content="#2091F9">
 
+</head>
 
-	   <div class="contenido-nosotros">
-		<div class="imagen2">
-			<img src="Imagenes/31.png" alt="Imagen nostros">
-		</div>
-		<div class="texto-nosotros">
-			<blockquote>Somos tú mejor opción</blockquote>
-		   
-			<div class="textos">
-				<p>En el mundo digital actual, la seguridad de tu información es más crucial que nunca. Las amenazas cibernéticas están en constante evolución, 
-					y proteger tu negocio contra estas amenazas es fundamental para su éxito y supervivencia.</p>
+<body>
 
-			</div>                
-		</div>
-	</div>
+    <header class="hero">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <h2 class="nav__title">Take a Trip</h2>
+            </div>
 
+            <ul class="nav__link nav__link--menu">
+                <li class="nav__items">
+                    <a href="index.html" class="nav__links">Inicio</a>
+                </li>
+                <li class="nav__items">
+                    <a href="secciones/lugares.html" class="nav__links">Conoce más</a>
+                </li>
+                <li class="nav__items">
+                    <a href="./secciones/unete.html" class="nav__links">Unete</a>
+                </li>
 
+                <img src="./images/close.svg" class="nav__close">
+            </ul>
+
+            <div class="nav__menu">
+                <img src="./images/menu.svg" class="nav__img">
+            </div>
+        </nav>
+
+        <section class="hero__container container">
+            <h1 class="hero__title">Conoce lugares turisticos mundiales.</h1>
+            <p class="hero__paragraph">Visita importantes lugares turisticos que deberias conocer
+            </p>
+            <a href="#" class="cta">Ver ahora</a>
+        </section>
+    </header>
+
+    <main>
+        <section class="container about">
+            <h2 class="subtitle">¿Qué veras en esta página web?</h2>
+            <p class="about__paragraph">Todo lo necesario y obligatorio de lugares turisticos que puedes visitar con tu familia
+            o para conocer por tú cuenta. 
+            </p>
+
+            <div class="about__main">
+                <article class="about__icons">
+                    <img src="images/bx-world.svg" class="about__icon">
+                    <h3 class="about__title">Conoce el mundo</h3>
+                    <p class="about__paragrah">¿Estas harto de ver el mismo arbol de siempre? Conoce diferentes recomendaciones.</p>
+                </article>
+
+                <article class="about__icons">
+                    <img src="images/bx-cool.svg" class="about__icon">
+                    <h3 class="about__title">Se feliz</h3>
+                    <p class="about__paragrah">Muchos de los usuarios estan felices de ver los diferentes lugares turisticos, conoce más nuestro
+                        sitio web.
+                    </p>
+                </article>
+
+                <article class="about__icons">
+                    <img src="images/bx-walk.svg" class="about__icon">
+                    <h3 class="about__title">Sal a caminar</h3>
+                    <p class="about__paragrah">Es bueno caminar y mucho mejor caminando en los diferentes lugares 
+                        recomendados en esta página web.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="knowledge">
+            <div class="knowledge__container container">
+                <div class="knowledege__texts">
+                    <h2 class="subtitle">Encuentra diferentes lugares turisticos, curiosidades y más.</h2>
+                    <p class="knowledge__paragraph">En este espacio, te invitamos a descubrir algunos 
+                        de los destinos turísticos más fascinantes de todo el mundo. 
+                        Desde majestuosos paisajes naturales hasta ciudades llenas de historia y cultura, 
+                        encontrarás información detallada sobre lugares únicos que no puedes dejar de visitar.</p>
+                    <a href="#" class="cta">Ver ahora</a>
+                </div>
+
+                <figure class="knowledge__picture">
+                    <img src="images/bernd-dittrich-q550i-IyLAQ-unsplash.jpg" class="knowledge__img">
+                </figure>
+            </div>
+        </section>
+
+        
 <br><br><br><br><br>
+        <section class="testimony">
+            <div class="testimony__container container">
+                <img src="./images/leftarrow.svg" class="testimony__arrow" id="before">
+
+                <section class="testimony__body testimony__body--show" data-id="1">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">Carlos Sánchez <span class="testimony__course">colaborador</span></h2>
+                        <p class="testimony__review">"Una página increíblemente completa. Los detalles sobre cada lugar turístico son fascinantes, y las curiosidades hacen que cada destino se 
+                            vuelva aún más interesante. ¡Definitivamente la mejor guía para planear mi próxima aventura!"</p>
+                    </div>
+
+                    <figure class="testimony__picture">
+                        <img src="images/bernd-dittrich-q550i-IyLAQ-unsplash.jpg" class="testimony__img">
+                    </figure>
+                </section>
+
+                <section class="testimony__body" data-id="2">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">Laura Rodríguez <span class="testimony__course">visitante</span></h2>
+                        <p class="testimony__review">"Me encanta cómo están organizados los destinos turísticos. Cada lugar tiene datos sorprendentes y lo mejor es que te dan información práctica.
+                             ¡Esta página hace que la planificación de viajes sea mucho más fácil y emocionante!"</p>
+                    </div>
+
+                    <figure class="testimony__picture">
+                        <img src="images/adrien-milcent-kYiHcjmJqS8-unsplash (1).jpg" class="testimony__img">
+                    </figure>
+                </section>
+
+                <section class="testimony__body" data-id="3">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">Eduardo Gómez <span class="testimony__course">visitante</span></h2>
+                        <p class="testimony__review">"Descubrí lugares que no conocía y que ya he agregado a mi lista de viajes. Además, las 
+                            curiosidades sobre cada destino me dieron una nueva perspectiva. Sin duda, una página que todo viajero debe visitar." </p>
+                    </div>
+
+                    <figure class="testimony__picture">
+                        <img src="./images/diogo-fagundes-dbBKeN1s8GY-unsplash.jpg" class="testimony__img">
+                    </figure>
+                </section>
+
+                <section class="testimony__body" data-id="4">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">Sofía Martínez <span class="testimony__course"> colaborador</span></h2>
+                        <p class="testimony__review">"Me sorprendió lo completa que es esta página. No solo ofrece recomendaciones de lugares turísticos, sino también curiosidades 
+                            que realmente enriquecen la experiencia. ¡Me siento inspirada para conocer nuevos destinos!"</p>
+                    </div>
+
+                    <figure class="testimony__picture">
+                        <img src="./images/timo-wagner-fT6-YkB0nfg-unsplash.jpg" class="testimony__img">
+                    </figure>
+                </section>
 
 
+                <img src="./images/rightarrow.svg" class="testimony__arrow" id="next">
+            </div>
+        </section>
 
-	   <main class="contenedor seccion">
-		<h2 class="centrar-texto fw300">Nuestros planes</h2>
-		<div class="contenedor-anuncios">
-			<div class="anuncio">
-		
-				<img src="Imagenes/5.png" alt="Casa1">
-				<div class="contenido-anuncio">
-					 <h3>Sentinela</h3>
-					 <p>¿Quieres un sistema de ciberseguridad para tu micro negocio? Está es tú mejor opción.</p>
-					 <p class="precio">Precio desde: $80,000mxn</p>
-				
-					 <a href="v1.html" class="boton btn-naranja block">Ver plan</a> <!--Finaliza primer anuncio-->
-				</div>
-			</div>
-			<div class="anuncio">
-				<img src="Imagenes/6.png" alt="Casa2">
-				<div class="contenido-anuncio">
-					<h3>Sentinela plus</h3>
-					<p>¿Tienes tus sistemas desactualizados desde hace tiempo? tal vez te interese esto. </p>
-					<p class="precio">Precio desde: $200,000mxn</p>
-					
-					<a href="v2.html" class="boton btn-naranja block">Ver plan</a> <!--Finaliza segundo anuncio-->
-				</div>
-				
-			</div>
-			<div class="anuncio">
-				<img src="Imagenes/7.png" alt="Casa3">
-				<div class="contenido-anuncio">
-					<h3>Sentinela +Pro</h3>
-					<p>¿Buscas innovación? Nuestro equipo buscara la manera de adaptarte a tus necesidades. </p>
-					<p class="precio">Precio desde: $450,000mxn</p>
-					
-					 <a href="v3.html" class="boton btn-naranja block">Ver plan</a><!--Finaliza tercer anuncio-->
-				</div>
-			</div>
+        <section class="questions container">
+            <h2 class="subtitle">Preguntas frecuentes</h2>
+            <p class="questions__paragraph">Nuestros primeros visitantes suelen tener estas preguntas.</p>
 
-		</div> <!--Finaliza caja de todas los anuncios-->
+            <section class="questions__container">
+                <article class="questions__padding">
+                    <div class="questions__answer">
+                        <h3 class="questions__title">¿Agregaran más lugares?
+                            <span class="questions__arrow">
+                                <img src="./images/arrow.svg" class="questions__img">
+                            </span>
+                        </h3>
 
-	</main> <!--Finaliza seccion principal anuncios-->
+                        <p class="questions__show">Claro que sí, sin embargo, estamos en fase beta de nuestro
+                            sitio web.
+                        </p>
+                    </div>
+                </article>
 
+                <article class="questions__padding">
+                    <div class="questions__answer">
+                        <h3 class="questions__title">¿Son seguros estos lugares?
+                            <span class="questions__arrow">
+                                <img src="./images/arrow.svg" class="questions__img">
+                            </span>
+                        </h3>
 
-	   <section class="contenedor seccion">
-		<h2 class="centrar-texto fw300 ">Más sobre nosotros</h2>
-		<div class="Iconos-nosotros">
-			<div class="iconos">
-				<img src="Imagenes/icono11.png" alt="Seguridad" height="200px" width="200px">
-				<h3>Seguridad</h3>
-				<p>Nuestra máxima prioridad es garantizar la seguridad de tus sistemas y datos. Utilizamos tecnologías de última generación y contamos con un equipo de expertos en ciberseguridad que trabaja incansablemente para identificar 
-					y neutralizar cualquier amenaza. Con nosotros, puedes estar seguro de que tu información está en las mejores manos.</p>
-			</div> <!--Iconos 1-->
+                        <p class="questions__show">Nos encargamos de poner todo lo necesario referente al lugar, ademas, 
+                            realizamos investigaciones arduas y seguras para tener todo lo interesante y seguro de cada lugar. 
+                        </p>
+                    </div>
+                </article>
 
-			<div class="iconos">
-				<img src="Imagenes/icono22.png" alt="Precio" height="200px" width="200px">	  	  
-				<h3>El Mejor Precio</h3>
-				<p>Entendemos que la ciberseguridad no debería ser un lujo, sino una necesidad accesible para todos. Por eso, ofrecemos las mejores tarifas del mercado sin comprometer la calidad de nuestros servicios. 
-					Nuestra misión es brindar soluciones asequibles que se adapten a las necesidades y presupuestos de nuestros clientes.</p>
-			</div> <!--Iconos 2-->   
+                <article class="questions__padding">
+                    <div class="questions__answer">
+                        <h3 class="questions__title">¿Puedo colaborar?
+                            <span class="questions__arrow">
+                                <img src="./images/arrow.svg" class="questions__img">
+                            </span>
+                        </h3>
 
-			<div class="iconos">
-				<img src="Imagenes/icono33.png" alt="Tiempo" height="200px" width="200px">
-				<h3>A Tiempo</h3>
-				<p>En el mundo digital, el tiempo es crucial. Nos comprometemos a entregar nuestros servicios dentro de los plazos acordados, sin excepciones. Sabemos lo importante
-					que es para ti contar con sistemas seguros en todo momento, y por eso, trabajamos de manera eficiente para cumplir con nuestras promesas.</p>
-			</div> <!--Iconos 3-->
-		</div> <!--termina seccion iconos-->
-	</section> <!--finaliza seccion nosotros-->
+                        <p class="questions__show">Nos encantaría hacer crecer nuestro sitio web, y con gusto aceptamos nuevos
+                            colaboradores. Solo dejamos tus datos en el siguiente formulario presionando el boton.
+                            <br><br><br>
+                            <a href="./secciones/unete.html" class="cta">Empezar</a>
+                        </p>
+                    </div>
+                </article>
+            </section>
 
+            <br><br><br><br><br>
+    </main>
 
-	<br><br><br><br><br><br><br><br><br><br><br>
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure> 
+                    <div class="conenedor">   
+                        <P>Take a Trip</P>
+                 
+                </figure>
+            </div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>Somos una página que se encarga de recomendarte lugares fantasticos y datos curiosos.</p>
+            </div>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="red-social">
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2024 <b>Hong Kong - Data</b> - Todos los Derechos Reservados.</small>
+        </div>
+    </footer>
 
+    <script src="./js/slider.js"></script>
+    <script src="./js/questions.js"></script>
+    <script src="./js/menu.js"></script>
+</body>
 
-
-	<footer class="pie-pagina">
-		<div class="grupo-1">
-			<div class="box">
-				<figure> 
-					<div class="conenedor">   
-						<P>INCRIPTIFY</P>
-				 
-				</figure>
-			</div>
-			<div class="box">
-				<h2>SOBRE NOSOTROS</h2>
-				<p>Empresa de ciberseguridad enfocada en la vanguardia de datos, actulización de sistemas, mediante ideas innovadoras.</p>
-			</div>
-			<div class="box">
-				<h2>SIGUENOS</h2>
-				<div class="red-social">
-					<a href="#" class="fa fa-instagram"></a>
-					<a href="#" class="fa fa-facebook"></a>
-					<a href="#" class="fa fa-instagram"></a>
-				</div>
-			</div>
-		</div>
-		<div class="grupo-2">
-			<small>&copy; 2024 <b>Incriptify</b> - Todos los Derechos Reservados.</small>
-		</div>
-	</footer>
-	</body>
 </html>
